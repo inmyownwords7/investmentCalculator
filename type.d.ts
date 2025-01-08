@@ -2,11 +2,14 @@
 export {}
 declare global {
 
-    type userInput = {
+    interface userInput {
         initialInvestment: number;
         annualInvestment: number;
         expectedReturn: number;
         duration: number;
     }
 
+    interface ResultsProps {
+        input: InvestmentInput;
+    }
 }
