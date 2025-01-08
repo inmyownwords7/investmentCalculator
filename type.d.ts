@@ -2,7 +2,7 @@
 export {}
 declare global {
 
-    interface userInput {
+    interface UserInput {
         initialInvestment: number;
         annualInvestment: number;
         expectedReturn: number;
@@ -11,5 +11,15 @@ declare global {
 
     interface ResultsProps {
         input: InvestmentInput;
+    }
+
+    interface UserInputProps {
+        onChange: (field: string, value: string) => void;
+        userInput: {
+            initialInvestment: number;
+            annualInvestment: number;
+            expectedReturn: number;
+            duration: number;
+        }
     }
 }

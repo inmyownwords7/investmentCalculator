@@ -1,5 +1,6 @@
 import logo from "../assets/investment-calculator-logo.png"
-export default function Header() {
+import {ReactElement} from "react";
+export default function Header(): ReactElement {
     return (
      <header id="header">
          <img src={logo} alt="Logo showing a money bag"/>

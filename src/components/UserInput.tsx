@@ -1,6 +1,6 @@
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-expect-error
-export default function UserInput({onChange, userInput}) {
+import {ReactElement} from "react";
+
+export default function UserInput({onChange, userInput}: UserInputProps): ReactElement {
     return (
         <section id="user-input">
             <div className="input-group">

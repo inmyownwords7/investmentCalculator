@@ -1,6 +1,7 @@
 import {calculateInvestmentResults, formatter} from "../util/investment.ts";
+import {ReactElement} from "react";
 
-export default function Results({ input }: ResultsProps) {
+export default function Results({ input }: ResultsProps): ReactElement {
     const resultsData =
     calculateInvestmentResults(input);
     const initialInvestment = resultsData[0].valueEndOfYear - resultsData[0].interest - resultsData[0].annualInvestment;
